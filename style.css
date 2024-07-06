@@ -19,7 +19,8 @@ body {
     width: 290px;
     height: 290px;
     border-radius: 50%;
-    background-color: white;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,6 +73,7 @@ body {
     color: white;
     background-color: black;
     cursor: pointer;
+
 
 }
 
@@ -131,4 +133,22 @@ body {
     border: 1px solid white;
 }
 
-@media screen and ()
+
+@media screen and (max-width: 500px) {
+
+    .outer-circle {
+        margin-left: 24%;
+    }
+
+    .btn-wrapper {
+        margin-left: 28%;
+    }
+
+    .lap-item {
+        margin-left: 28%;
+    }
+
+    .lap-clear {
+        margin-left: -7%;
+    }
+}

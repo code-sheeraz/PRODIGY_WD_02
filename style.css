@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: monospace;
     font-size: 16px;
     width: 100%;
@@ -14,7 +15,7 @@ body{
     align-items: center;
 }
 
-.outer-circle{
+.outer-circle {
     width: 290px;
     height: 290px;
     border-radius: 50%;
@@ -24,7 +25,7 @@ body{
     justify-content: center;
 }
 
-.inner-circle{
+.inner-circle {
     width: 280px;
     height: 220px;
     border-radius: 35%;
@@ -34,61 +35,100 @@ body{
     justify-content: center;
 }
 
-.laps{
-    height: 250px;
-    overflow: auto;
-}
 
-.text{
+
+.text {
     color: white;
     font-size: 23px;
-    
+
 }
-.minute{
+
+.minute {
     font-size: 35px;
     margin-left: -5%;
 }
-.sec{
+
+.sec {
     font-size: 30px;
 }
 
-.msec{
+.msec {
     font-size: 28px;
 }
 
-.btn-wrapper{
+.btn-wrapper {
     width: 250px;
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
-    margin-left: 10%;
+    margin-left: 3.3%;
 }
 
-.btn{
+.btn {
     width: 50px;
-    height: 50px; 
+    height: 50px;
     border-radius: 50%;
     border: 2px solid white;
     color: white;
     background-color: black;
     cursor: pointer;
- 
+
 }
 
-.btn:hover{
+.btn:hover {
     background-color: white;
     color: black;
 
 }
 
-.laps{
+.laps {
+    height: 250px;
+    width: 550px;
     list-style: none;
     color: white;
+    overflow: auto;
+    position: relative;
+    padding: 25px 0px;
+
 }
-.lap-num{
+
+.laps::-webkit-scrollbar {
+    display: none;
+}
+
+.lap-item {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    /* background-color: red; */
+    margin-left: 25px;
+    margin-top: 15px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.lap-num {
     color: #cccccc;
 }
-.lap-time{
+
+.lap-time {
     display: inline-block;
     margin-left: 25px;
 }
+
+.lap-clear {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    bottom: 150px;
+    left: 40.5%;
+    width: 120px;
+    padding: 15px 0;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.806);
+    border: 1px solid white;
+}
+
+@media screen and ()

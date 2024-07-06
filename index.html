@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stop Watch</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="watch">
-            <div class="outer-circle">
-                <div class="inner-circle">
-                    <span class="text minute">&nbsp;01 :</span>
-                    <span class="text sec">&nbsp;47 :</span>
-                    <span class="text msec">&nbsp;97 </span>
-                </div>
-            </div>
-            <div class="btn-wrapper">
-            <button class="btn btn-play">Play</button>
-            <button class="btn btn-pause">Pause</button>
-            <button class="btn btn-lap">Lap</button>
-            <button class="btn btn-reset">Reset</button>
+      <div class="watch">
+        <div class="outer-circle">
+          <div class="inner-circle">
+            <span class="text minute">&nbsp;01 :</span>
+            <span class="text sec">&nbsp;47 :</span>
+            <span class="text msec">&nbsp;97 </span>
+          </div>
         </div>
+        <div class="btn-wrapper">
+          <button class="btn btn-play">Play</button>
+          <button class="btn btn-pause">Pause</button>
+          <button class="btn btn-lap">Lap</button>
+          <button class="btn btn-reset">Reset</button>
         </div>
-        <div class="laps">
-            <ul class="laps">
-                <li class="lap-item">
-                    <span class="lap-num">01</span>
-                    <span class="lap-time">01 : 43 : 07</span>
-                </li>
-            </ul>
-        </div>
+      </div>
+      <div class="lap">
+        <ul class="laps">
+        </ul>
+          <button class="lap-clear">Clear</button>
+        </ul>
+      </div>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
